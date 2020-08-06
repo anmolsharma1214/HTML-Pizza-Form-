@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <title>Pizza Home Delivery</title>
+      <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+      <link href="css/styles.css" rel="stylesheet">
+   </head>
+   <body>
+      <header>
+         <div>
+            <h1>Scrumptious Pizza</h1>
+            <h2>Hot and Fresh </h2>
+         </div>
+      </header>
+      <main>
+         <div class="container">
+            <div class="banner">
+               <h3>Order Pizza</h3>
+            </div>
+         </div>
+         <img src="image/logo.jpeg" alt="logo" style= height:250px; > <img src="image/oven.jpeg" alt="pizza" style= height:250px; >
+         <form id="register" method="post"
+            action="process-form.php">
+            <p>Personal Information</p>
+            <div>
+               <label for ="first-name">First Name</label>
+               <input type="text" name="first-name" id="first-name"
+                  required maxlength="30" size="14"
+                  placeholder="First Name" >
+            </div>
+            <div>
+               <label for ="last-name">Last Name</label>
+               <input type="text" name="last-name" id="last-name"
+                  required maxlength="30" size="14"
+                  placeholder="Last Name" >
+            </div>
+            <div>
+               <label for="address">Street Address</label>
+               <input type="text" id="address" name="address" required maxlength="30"
+                  placeholder="Address">
+            </div>
+            <div>
+               <label for="province">Province</label>
+               <select name="province" id ="province">
+                  <option value="on">Ontario</option>
+                  <option value="ab">Alberta</option>
+                  <option value="bc">British Columbia</option>
+                  <option value="ns">Nova Scotia</option>
+                  <option value="on">Ontario</option>
+               </select>
+            </div>
+            <div>
+               <label for="phone">Phone Number</label>
+               <input type="tel" id="phone" name="phone" required maxlength="16" size="14"
+                  placeholder="xxx(xxx)xxxx">
+            </div>
+            <div>
+               <label for="email">Email</label>
+               <input type="email" id="email" name="email"
+                  placeholder="xxx@mail.com">
+            </div>
+            <fieldset>
+               <legend>Pizza Customisation</legend>
+               <p class="note">Size of Pizza</p>
+               <img src="image/pizza.jpeg" alt="pizza" style= height:250px;>
+               <div>
+                  <p class="selection-container">
+                     <input type="radio" id="Extra-Large" name="Pizza" value="Extra-Large">
+                     <label for="Extra-Large">Extra Large Pizza</label>
+                  </p>
+               </div>
+               <div>
+                  <p class="selection-container" >
+                     <input type="radio" class="selection-container" id="Large-Pizza" name="Pizza" value="Large-Large">
+                     <label for=Large-Pizza>Large Pizza</label>
+                  </p>
+               </div>
+               <div>
+                  <p class="selection-container">
+                     <input type="radio" class="selection-container" id="Medium_Pizza" name="Pizza" value="Medium_Pizza">
+                     <label for="Medium_Pizza">Medium Pizza</label>
+                  </p>
+               </div>
+               <div>
+                  <p class="selection-container" >
+                     <input type="radio" class="selection-container" id="Regular_Pizza" name="Pizza" value="Regular_Pizza">
+                     <label for="Regular_Pizza">Regular Pizza</label>
+                  </p>
+               </div>
+               <div>
+                  <p class="selection-container">
+                     <input type="radio" class="selection-container" id="Slice" name="Pizza" value="Slice">
+                     <label for="Slice">A Slice</label>
+                  </p>
+               </div>
+               <img src="image/slice.jpeg" alt="slice" style= height:250px;>
+               <p class="note">Shape of Pizza</p>
+               <div>
+                  <p class="selection-container">
+                     <input type="radio" class="selection-container" id="Round" name="Shape" value="Round">
+                     <label for="Round">Round</label>
+                  </p>
+                  <p class="selection-container">
+                     <input type="radio" class="selection-container" id="Square" name="Shape" value="Square">
+                     <label for="Square">Square</label>
+                  </p>
+                  <p class="selection-container" >
+                     <input type="radio" class="selection-container" id="Heart" name="Shape" value="Heart">
+                     <label for="Heart">Heart(Valentine Special)</label>
+                  </p>
+                  <img src="image/hp.jpg" alt="hp" style= height:250px;>
+                  <p class="note">Toppings For Your Pizza</p>
+                  <p class="selection-container">
+                     <input type="checkbox" name="Pepperoni" id="Pepperoni"  >
+                     <label for="Pepperoni">Pepperoni</label>
+                  </p>
+                  <p class="selection-container">
+                     <input type="checkbox" name="Mushrooms" id="Mushrooms"  >
+                     <label for="Mushrooms">Mushrooms</label>
+                  </p>
+                  <p class="selection-container">
+                     <input type="checkbox" name="Onions" id="Onions" >
+                     <label for="Onions">Onions</label>
+                  </p>
+                  <p class="selection-container">
+                     <input type="checkbox" name="Sausage" id="Sausage" >
+                     <label for="Sausage">Sausage</label>
+                  </p>
+                  <p class="selection-container">
+                     <input type="checkbox" name="Bacon" id="Bacon" >
+                     <label for="Bacon">Bacon</label>
+                  </p>
+                  <p class="selection-container">
+                     <input type="checkbox" name="Extra-Cheese" id="Extra-Cheese"  >
+                     <label for="Extra-Cheese">Extra cheese</label>
+                  </p>
+                  <p class="selection-container">
+                     <input type="checkbox" name="Black-Olives" id="Black-Olives" >
+                     <label for="Black-Olives">Black Olives</label>
+                  </p>
+                  <p class="selection-container">
+                     <input type="checkbox" name="Pineapple" id="Pineapple"  >
+                     <label for="Pineapple">Pineapple</label>
+                  </p>
+                  <p class="selection-container">
+                     <input type="checkbox" name="Spinach" id="Spinach" >
+                     <label for="Spinach">Spinach</label>
+                  </p>
+                  <p class="selection-container">
+                     <input type="checkbox" name="Jalapeño" id="Jalapeño"  >
+                     <label for="Jalapeño">Jalapeño</label>
+                  </p>
+                  <p class="selection-container">
+                     <input type="checkbox" name="Chocolate" id="Chocolate" >
+                     <label for="Chocolate">Chocolate</label>
+                  </p>
+               </div>
+               <p class="note">Crust of Pizza(Select more than one only, if want to order more than one pizzas! )</p>
+               <div>
+                  <p class="selection-container"  >
+                     <input type="radio" class="selection-container" id="New_Haven_Style" name="Crust" value="New_Haven_Style">
+                     <label>New_Haven_Style</label>
+                  </p>
+                  <p class="selection-container" >
+                     <input type="radio" class="selection-container" id="St._Louis_Style" name="Crust" value="St._Louis_Style">
+                     <label>St._Louis_Style</label>
+                  </p>
+                  <p class="selection-container" >
+                     <input type="radio" class="selection-container" id="New_York_Style" name="Crust" value="New_York_Style">
+                     <label>New_York_Style</label>
+                  </p>
+                  <p class="selection-container" >
+                     <input type="radio" class="selection-container" id="Italian_Style" name="Crust" value="Italian_Style">
+                     <label>Italian_Style</label>
+                  </p>
+                  <p class="selection-container" >
+                     <input type="radio" class="selection-container" id="Chicago_Deep-Dish_Style" name="Crust" value="Chicago_Deep-Dish_Style">
+                     <label>Chicago_Deep-Dish_Style</label>
+                  </p>
+                  <p class="selection-container" >
+                     <input type="radio" class="selection-container" id="Cheesy_Crust" name="Crust" value="Cheesy_Crust">
+                     <label>Cheesy_Crust</label>
+                  </p>
+                  <p class="selection-container" >
+                     <input type="radio" class="selection-container" id="Thin_Crust" name="Crust" value="Thin_Crust">
+                     <label>Thin_Crust</label>
+                  </p>
+                  <p class="selection-container" >
+                     <input type="radio" class="selection-container" id="Thick_Crust" name="Crust" value="Thick_Crust">
+                     <label>Thick_Crust</label>
+                  </p>
+                  <p class="selection-container" >
+                     <input type="radio" class="selection-container" id="Stuffed_Crust" name="Crust" value="Stuffed_Crust">
+                     <label>Stuffed_Crust</label>
+                  </p>
+                  <p class="selection-container" >
+                     <input type="radio" class="selection-container" id="Flatbread" name="Crust" value="Flatbread">
+                     <label>Flatbread</label>
+                  </p>
+               </div>
+               <p class="note">Sauces For Your Pizza</p>
+               <div>
+                  <p class="selection-container">
+                     <input type="checkbox" name="BBQ_Sauce" id="BBQ_Sauce" >
+                     <label for="BBQ_Sauce">BBQ Sauce</label>
+                  </p>
+               </div>
+               <div>
+                  <p class="selection-container">
+                     <input type="checkbox" name="Ranch_Dressing" id="Ranch_Dressing" >
+                     <label for="Ranch_Dressing">Ranch Dressing</label>
+                  </p>
+               </div>
+               <div>
+                  <p class="selection-container">
+                     <input type="checkbox" name="Garlic_Parmesan_sauce" id="Garlic_Parmesan_sauce"  >
+                     <label for="Garlic_Parmesan_sauce">Garlic Parmesan sauce</label>
+                  </p>
+               </div>
+               <div>
+                  <p class="selection-container">
+                     <input type="checkbox" name="Pizza_Sauce" id="Pizza_Sauce" >
+                     <label for="Pizza_Sauce">Pizza Sauce</label>
+                  </p>
+               </div>
+               <div>
+                  <p class="selection-container">
+                     <input type="checkbox" name="Alfredo_Sauce" id="Alfredo_Sauce" >
+                     <label for="Alfredo_Sauce">Alfredo Sauce</label>
+                  </p>
+               </div>
+               <p class="note">Delivery Options</p>
+               <div>
+                  <p class="selection-container" >
+                     <input type="radio" class="selection-container" id="Take-out" name="Delivery" value="Take-out">
+                     <label for="Take-out">Take out</label>
+                  </p>
+                  <p class="selection-container" >
+                     <input type="radio" class="selection-container" id="Eat-in" name="Delivery" value="Eat-in">
+                     <label for="Eat-in">Eat-in</label>
+                  </p>
+                  <p class="selection-container" >
+                     <input type="radio" class="selection-container" id="Delivery" name="Delivery" value="Delivery">
+                     <label for="Delivery">Delivery</label>
+                  </p>
+               </div>
+               <p class="note">Number of Pizzas</p>
+               <div>
+                  <p class="selection-container" >
+                     <input type="radio" class="selection-container" id="1" name="number" value="1">
+                     <label for="1">1</label>
+                  </p>
+                  <p class="selection-container" >
+                     <input type="radio" class="selection-container" id="2" name="number" value="2">
+                     <label for="2">2</label>
+                  </p>
+                  <p class="selection-container" >
+                     <input type="radio" class="selection-container" id="More" name="number" value="More">
+                     <label for="More">More</label>
+                  <div>
+                     <label for ="More">More Pizzas</label>
+                     <input type="text" name="text" id="MorePizza"
+                        placeholder="How many?" >
+                  </div>
+               </div>
+            </fieldset>
+            <fieldset>
+               <legend>Account Details To Subscribe For Upcoming Coupons and Offers</legend>
+               <div>                 <label for="email">Email-ID</label>
+                  <input type="email" id="email2" name="email">
+               </div>
+               <div>
+                  <div class="progress">
+                     <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+                        100% Complete
+                     </div>
+                  </div>
+               </div>
+               <div style="text-align: center;">
+                  <button type="submit">Order</button>
+               </div>
+            </fieldset>
+         </form>
+      </main>
+      <footer>
+         <p><small> &copy;2020 Pizza. All rights reserved.</small></p>
+         <nav>
+            <a href="https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_progressbar4&stacked=h" title="link1"></a>
+         </nav>
+         <p>Took bar code from W3 school</p>
+         <nav>
+            <a href="https://www.kitchentreaty.com/how-to-make-heart-shaped-pizzas/" title="pizza pic"></a>
+         </nav>
+         <p>took heart shape img from kitchen treaty
+         <p>others pics took from pexels</p>
+         <nav>
+            <a href="https://images.pexels.com/photos/708587/pexels-photo-708587.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+               title="slice pic">
+            </a>
+         </nav>
+         <p>others pics took from pexels</p>
+         <nav>
+            <a href="https://images.pexels.com/photos/2260208/pexels-photo-2260208.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+               title="pizza pic"></a>
+         </nav>
+         <p>others pics took from pexels</p>
+         <nav>
+            <a href="https://www.pexels.com/photo/baked-pizza-on-pizza-peel-in-oven-905847/" title="pizza pic"></a>
+         </nav>
+      </footer>
+   </body>
+</html>
